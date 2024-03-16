@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>certification</title>
+
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="./Images/image1.png" type="image/x-icon">
+
+    <!--BOXICONS-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- <script>
+        document.querySelector('.navback').addEventListener('click', function() {
+            window.location.href = './index.html#certification';
+        });
+    </script> -->
+
+    <style>
+        
+* {
+            
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgba(11, 17, 30, 1);
+        }
+        a{
+            text-decoration: none;
+        }
+        legend {
+            color: rgb(234, 231, 231);
+            font-weight: bold;
+            font-size: 20px;
+            margin-left: 20px;
+        }
+
+        fieldset {
+            font-family: 'Times New Roman', Times;
+            margin: 25px;
+        }
+
+        @keyframes animate {
+            0% {
+                width: 100px;
+            }
+
+            50% {
+                width: 200px;
+            }
+
+            100% {
+                width: 100px;
+            }
+        }
+
+        .card img {
+            width: 99%;
+            border-radius: 12px;
+            height: 225px;
+            object-fit: cover;
+            padding-left: px;
+            margin-bottom: 10px;
+        }
+        .card {
+            background-color: hsl(354, 36%, 29%);
+            border: 1px solid hsl(356, 28%, 49%);
+            padding: 8px;
+            border-radius: 12px;
+            width: 300px;
+            height: 420px;
+            margin: 25px;
+            display: inline-block;
+            box-sizing: border-box;
+            cursor: pointer;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+        }
+
+        .tag {
+            padding: 4px 8px;
+            border: 1px solid #201f1f;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #3c3c3c;
+            background-color:hsl(356, 66%, 75%);
+        }
+
+        .name {
+            font-size: 20px;
+            font-weight: 600;
+            background-color:hsl(356, 66%, 75%);
+            margin-top: 16px;
+            border-radius: 11px;
+        }
+
+        .btn {
+            border: none;
+            padding: 14px 24px;
+            border-radius: 50px;
+            font-weight: bold;
+            color: rgb(81, 68, 68);
+            border: 1px solid hsl(356, 66%, 75%);
+            background-color: rgb(185, 133, 133);
+            transition: all 0.2s;
+            margin: 0 auto;
+            display: block;
+            cursor: pointer;
+
+        }
+        .link-btn{
+            text-decoration: none;
+            background-color:#fd754c;
+
+        }
+        .btn:hover {
+            color:#171616;
+            background-color: hsl(356, 66%, 75%);
+            box-shadow: 0 10px 15px rgb(144, 143, 143);
+        }
+
+        .card__details {
+            padding: 6px 8px 22px 8px;
+            background-color:hsl(356, 66%, 75%);
+            border-radius: 12px;
+        
+
+        }
+        .container {
+            
+            justify-content: space-around;
+            padding: 50px 0;
+         }
+
+.copyrights {
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.back_{
+    color:white;
+    font-size: 1.25rem;
+}
+.nav__menu {
+    position: fixed;
+  bottom: 1rem;
+  background-color: rgba(230, 132, 139, 1);
+  width: 9%;
+  border-radius: 4rem;
+  padding: 0.9rem 2rem 0.9rem 2rem;
+  backdrop-filter: blur(10px);
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
+.nav__menu:hover{
+    background-color: rgb(216, 117, 124);
+}
+.nav__list {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.nav__link  {
+  
+  font-size: 1.25rem;
+  padding: 0.4rem;
+  display: flex;
+  border-radius: 5rem;
+  
+}
+
+.nav__item {
+  cursor: pointer;
+}
+.navback{
+    color:rgba(11, 17, 30, 1) ;
+    font: 1.2rem;
+}
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+/*small devices*/
+@media screen and (max-width: 320px) {
+    .nav__list{
+        align-items: auto;
+  justify-content: auto; 
+    }
+    .nav__menu{
+        width:5%; 
+        padding: 0.5rem 0rem 0.5rem 0.2rem;
+    }
+    
+    
+}
+
+/*medium devices*/
+@media screen and (max-width: 576px) {
+    .nav__list{
+        align-items: auto;
+  justify-content: auto; 
+    }
+    .nav__menu{
+        width:15%; 
+        padding: 0.5rem 0rem 0.5rem 0.2rem;
+    }
+    .nav__link  {
+  
+    font-size: auto;
+    }
+ 
+}
+@media screen and (min-width: 767px) {
+    .nav__list{
+        align-items: auto;
+  justify-content: auto; 
+    }
+    .nav__menu{
+        width:12%; 
+        padding: 0.5rem 0rem 0.5rem 0.4rem;
+    }
+    .nav__link  {
+  
+    font-size: auto;
+    }
+}
+/*Large devices*/
+@media screen and (min-width: 992px) {
+    .nav__list{
+        align-items: auto;
+  justify-content: auto; 
+    }
+    .nav__menu{
+        width:9%; 
+        padding: 0.7rem 0rem 0.7rem 2.5rem;
+    }
+    
+}
+
+
+
+
+    </style>
+</head>
+
+
+<body>
+
+    <div class="nav__menu">
+        <ul class="nav__list">
+                <a href="./index.html#certification" class="nav__link active-link"> 
+                    <i class='bx bxs-left-arrow'></i> 
+                    <div class="navback">Back</div>
+                </a>
+        </ul>
+    </div>
+  
+     <fieldset>
+        
+        <legend class="cetificate_123"> Certificates</legend>
+        <div class="container1">
+            <br>
+            <div class="container">
+                <div class="card">
+                    <img src="./Images/Certificate_01.JPG" alt="Certificate_1">
+                    <div class="card__details">
+                        <div class="name">Web Design</div>
+                        <br>
+                        <span class="tag">HTML/CSS/JS</span>
+                        <br><br>
+                        <a download="" href="./Certificates/2023/Web_Design_for_Beginners_E-Certificate (1).pdf" class="link-btn1"><button class="btn">View</button></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./Images/Certificate_02.JPG" alt="Certificate_2">
+                    <div class="card__details">
+                        <div class="name">Front-End Web Development</div>
+                        <br>
+                        <span class="tag">HTML/CSS/JS</span>
+                        <br><br>
+                        <a download="" href="./Certificates/2023/Front-End_Web_Development_E-Certificate.pdf" class="link-btn1"><button class="btn">View</button></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./Images/Certificate_03.JPG" alt="Certificate_3">
+                    <div class="card__details">
+                        <div class="name">Front-End Web Development</div>
+                        <br>
+                        <span class="tag">React JS & JavaScript</span>
+                        <br><br>
+                        <a download="" href="./Certificates/2023/Z1Fvf4T.pdf" class="link-btn1"><button class="btn">View</button></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./Images/Certificate_04.JPG" alt="Certificate_3">
+                    <div class="card__details">
+                        <div class="name">Front-End Web Development</div>
+                        <br>
+                        <span class="tag">React JS & JavaScript</span>
+                        <br><br>
+                        <a download="" href="./Certificates/2023/2JF2o.pdf" class="link-btn1"><button class="btn">View</button></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./Images/Certificate_05.JPG" alt="Certificate_3">
+                    <div class="card__details">
+                        <div class="name">Front-End Web Development</div>
+                        <br>
+                        <span class="tag">React JS & JavaScript</span>
+                        <br><br>
+                        <a download="" href="./Certificates/2023/Z2nQ4mh.pdf" class="link-btn1"><button class="btn">View</button></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./Images/Certificate_06.JPG" alt="Certificate_3">
+                    <div class="card__details">
+                        <div class="name">Front-End Web Development</div>
+                        <br>
+                        <span class="tag">React JS & JavaScript</span>
+                        <br><br>
+                        <a download="" href="./Certificates/2023/KTLQ8.pdf" class="link-btn1"><button class="btn">View</button></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./Images/Certificate_07.JPG" alt="Certificate_3">
+                    <div class="card__details">
+                        <div class="name">Python</div>
+                        <br>
+                        <span class="tag">Python for Beginners</span>
+                        <br><br>
+                        <a download="" href="./Certificates/2023/Python_for_Beginners_E-Certificate.pdf" class="link-btn1"><button class="btn">View</button></a>
+                    </div>
+                </div>
+                </container>
+    </fieldset>
+       
+    
+        <div class="copyrights">
+            <p>
+                &#169;2024 Rashiprabhamalshara | All rigths reserved. 
+            </p>
+    
+        </div>  
+        
+</body>
+
+</html>
